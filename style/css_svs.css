@@ -1,0 +1,103 @@
+#title_table_svs {
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 26%, rgba(32,124,202,1) 74%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(26%,rgba(41,137,216,1)), color-stop(74%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 26%,rgba(32,124,202,1) 74%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 26%,rgba(32,124,202,1) 74%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 26%,rgba(32,124,202,1) 74%,rgba(125,185,232,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 26%,rgba(32,124,202,1) 74%,rgba(125,185,232,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: -17px;
+}
+#title_table_svs h3 {
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+#position {
+    width: 20px;
+}
+#title_table_field {
+    text-transform: capitalize;
+}
+.widefat th {
+    font-weight: 700;
+}
+#donutchart {
+    margin: 0 auto;
+}
+#add_link_button {
+    background-image:url("../images/add.png");
+    background-size: 20px 21px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+tr:nth-child(even) {background: #F6F1F1}
+tr:nth-child(odd) {background: #FFF}
+.text-align_center {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+#back_button {
+    float:right;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+#filters_svs, #charts_svs {
+    float: left;
+}
+#donutchart {
+    margin: 0 auto;
+}
+#content_svs_statistics {
+    width: 100%;
+    background-color: #ffffff;
+}
+#filters_svs {
+    margin-left: 50px;
+    width:275px;
+    border-right: 1px solid #E1DBDB;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+#filters_svs p a, #filters_svs label {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+#filters_svs label {
+    margin-left: -5px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+#filters_svs p {
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+.selected_filter {
+    background-color: #E2EEF8;
+}
+#charts_svs {
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#apply_date {
+    background-color: #127495;
+    width: 60px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#datepiker p {
+    border-bottom: none;
+}
+#datepiker {
+    margin-left: -12px;
+}
+
