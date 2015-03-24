@@ -1,10 +1,12 @@
-=== SVS ShortLink Analytics ===
+=== ShortLink Analytics by SVS-Websoft===
 Contributors: svs-websoft
 Tags: shortlink, link statistics, link analytics, short link
 Requires at least: 3.8
 Tested up to: 4.1.1
 Stable tag: trunk
 License: GPL v3
+
+
 
 Generate short link and track visitors
 
@@ -33,7 +35,10 @@ Please send message with your problem to office@svs-websoft.com
 
 
 == Screenshots ==
-1. http://svs-websoft.com/open-source/SVS_ShortLink_Analytics/SVS_ShortLink_Analytics.png
+1. /assets/1.png
+2. /assets/2.png
+3. /assets/3.png
+4. /assets/4.png
 
 == Changelog ==
 = 1.0 =
