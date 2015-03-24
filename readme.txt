@@ -35,10 +35,9 @@ Please send message with your problem to office@svs-websoft.com
 
 
 == Screenshots ==
-1. /assets/1.png
-2. /assets/2.png
-3. /assets/3.png
-4. /assets/4.png
+1. Shortlink Menu position
+2. Main plugin view 
+3. Statistics view
 
 == Changelog ==
 = 1.0 =
