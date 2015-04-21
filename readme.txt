@@ -2,7 +2,7 @@
 Contributors: svs-websoft
 Tags: link statistics, link analytics, short link, analytic, analytics, analyze, click, clickmeter, clicks, custom url, link management, link monitor, link tracker, link tracking, marketing, link mask, masking, link monitor, pageviews, permalink, link redirect, link reports, short url, shorten, shorturl, statistics, stats, tinyurl, track, tracker, tracking, url shortener, views, canvas, chart, link chart, link charting, charts, graph, graphing, graphs, line chart, pie chart,  visualisation, visualization, plugin, widget 
 Requires at least: 3.8
-Tested up to: 4.1.1
+Tested up to: 4.2.0
 Stable tag: trunk
 License: GPL v3
 
