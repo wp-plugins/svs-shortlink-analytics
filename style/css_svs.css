@@ -43,9 +43,6 @@ tr:nth-child(odd) {background: #FFF}
 }
 #back_button {
     float:right;
-    top: 20px;
-    right: 20px;
-    position: absolute;
 }
 #filters_svs, #charts_svs {
     float: left;

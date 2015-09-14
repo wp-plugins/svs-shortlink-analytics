@@ -110,9 +110,12 @@ class ShortlinkAnalyticsModel
     {
         $wp_svs_shortlinks = $this->db->prefix . 'svs_shortlinks';
         $wp_svs_statistics = $this->db->prefix . 'svs_statistics';
-        $name = esc_sql($_POST['name']);
-        $select_http = esc_sql($_POST['select_http']);
-        $url = esc_sql($_POST['url']);
+        if (empty($_POST)){
+            return false;
+        }
+        $name = esc_sql(@$_POST['name']);
+        $select_http = esc_sql(@$_POST['select_http']);
+        $url = esc_sql(@$_POST['url']);
         if (!preg_match("~^(?:f|ht)tps?://~i", $url)) {
             $insert_url = $select_http.$url;
         } else {
@@ -128,7 +131,7 @@ class ShortlinkAnalyticsModel
                 $randomnumber = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
                 $generated_link = get_site_url() . "/" . $randomnumber;
                 $this->db->insert(
-                    'wp_svs_shortlinks',
+                    $wp_svs_shortlinks,
                     array(
                         'name_link' => esc_sql($_POST['name']),
                         'generated_link' => $generated_link,
@@ -192,11 +195,11 @@ class ShortlinkAnalyticsModel
         $wp_svs_shortlinks = $this->db->prefix . 'svs_shortlinks';
         $wp_svs_statistics = $this->db->prefix . 'svs_statistics';
 
-        $id = esc_sql($_GET['id']);
-        $filter = esc_sql($_GET['filter']);
-        $display_range = esc_sql($_GET['displayRange']);
-        $startDate = esc_sql($_GET['Startdate']);
-        $endDate = esc_sql($_GET['Enddate']);
+        $id = esc_sql(@$_GET['id']);
+        $filter = esc_sql(@$_GET['filter']);
+        $display_range = esc_sql(@$_GET['displayRange']);
+        $startDate = esc_sql(@$_GET['Startdate']);
+        $endDate = esc_sql(@$_GET['Enddate']);
 
 
         if (!$filter) {
@@ -268,7 +271,7 @@ class ShortlinkAnalyticsModel
 
     private function getCurrentUrl() {
         $pageURL = 'http';
-        if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+        if (array_key_exists("HTTPS", $_SERVER) && $_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
         $pageURL .= "://";
         if ($_SERVER["SERVER_PORT"] != "80") {
             $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
@@ -312,7 +315,7 @@ class ShortlinkAnalyticsModel
                 $country = (string)((!empty($details_obs->geoplugin_countryName)) ? $details_obs->geoplugin_countryName : "Unknown");
                 $town = (string)((!empty($details_obs->geoplugin_city)) ? $details_obs->geoplugin_city : "Unknown");
                 $this->db->insert(
-                    'wp_svs_statistics',
+                    $wp_svs_statistics,
                     array(
                         'FK_links' => $id,
                         'country' => "$country",

@@ -1,8 +1,8 @@
 === ShortLink Analytics by SVS-Websoft===
 Contributors: svs-websoft
-Tags: link statistics, link analytics, short link, analytic, analytics, analyze, click, clickmeter, clicks, custom url, link management, link monitor, link tracker, link tracking, marketing, link mask, masking, link monitor, pageviews, permalink, link redirect, link reports, short url, shorten, shorturl, statistics, stats, tinyurl, track, tracker, tracking, url shortener, views, canvas, chart, link chart, link charting, charts, graph, graphing, graphs, line chart, pie chart,  visualisation, visualization, plugin, widget 
+Tags: links, link, url, urls, affiliate, affiliates, pretty, marketing, redirect, forward, plugin, rewrite, shorturl, hoplink, hop, shortlink, short, shorten, click, clicks, track, tracking, tiny, tinyurl, budurl, shrinking, domain, shrink, mask, masking, cloak, cloaking, stats, statistics, stat, statistic, link statistics, link analytics, short link, analytic, analytics, analyze, clickmeter, custom url, link management, link monitor, link tracker, link tracking, link monitor, pageviews, permalink, link redirect, link reports, short url, url shortener, link mask, link chart, link charting
 Requires at least: 3.8
-Tested up to: 4.2.0
+Tested up to: 4.3.0
 Stable tag: trunk
 License: GPL v3
 
@@ -12,11 +12,11 @@ ShortLink Analytics WordPress plugin generate short link and track visitors
 
 == Description ==
 This plugin allows you to:
-- create shortlinks like http://yourdomain.com/7TDZ8nMEqg
-- track unique visitors
-- track clicks
-- statistics by browser, OS, country, city
-- statistics by date (day, week, month, custom)
+<p>- create shortlinks like http://yourdomain.com/7TDZ8nMEqg</p>
+<p>- track unique visitors</p>
+<p>- track clicks</p>
+<p>- statistics by browser, OS, country, city</p>
+<p>- statistics by date (day, week, month, custom)</p>
 
 
 == Installation ==
@@ -40,5 +40,8 @@ Please send message with your problem to office@svs-websoft.com
 3. Statistics view
 
 == Changelog ==
-= 1.0 =
+= 1.0.1 =
+* Bug fixing.
+
+= 1.0.0 =
 * Initial Release.

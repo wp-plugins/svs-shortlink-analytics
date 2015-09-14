@@ -4,7 +4,7 @@
  * Plugin Name: SVS ShortLink Analytics
  * Plugin URI: http://svs-websoft.com
  * Description: Generate short links & show link analytics.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: SVS WebSoft
  * Author URI: http://svs-websoft.com
  * License: GPL v3
@@ -12,6 +12,7 @@
 
 require_once "ShortlinkAnalyticsUtils.php";
 require_once "ShortlinkAnalyticsModel.php";
+global $wpdb;
 
 /**
  * Create table structure on plugin install
